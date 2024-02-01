@@ -1,6 +1,6 @@
 import React from "react";
-import bowling from "../assets/projects/bowling.jpg";
-import nexis from "../assets/projects/nexis.jpg";
+import bowling from "../assets/projects/bowling.PNG";
+import nexis from "../assets/projects/nexis.PNG";
 
 const Portfolio = () => {
     const portfolios = [
@@ -22,14 +22,15 @@ const Portfolio = () => {
                 </div>
                 <div className="grid sm:grid-flow-col-2 md:grid-cols-3 gap-8 px-12 sm:px-8">
                     {portfolios.map(({ id, src }) => {
+                        return(
                         <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                             <img src={src} alt="portfolio" className="rounded-md duration-200 hover:scale-105" />
                             <div className="flex items-center justify-center">
                                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
                                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
                             </div>
-                        </div>;
-                    })}
+                        </div>
+                    )})}
                 </div>
             </div>
         </div>
