@@ -1,6 +1,6 @@
 import React from "react";
-import bowling from "../assets/portfolio/bowling.jpg";
-import nexis from "../assets/portfolio/nexis.jpg";
+import bowling from "../assets/projects/bowling.jpg";
+import nexis from "../assets/projects/nexis.jpg";
 
 const Portfolio = () => {
     const portfolios = [
