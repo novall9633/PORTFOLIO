@@ -1,8 +1,7 @@
 import React from "react";
 import bowling from "../../assets/projects/bowling.PNG";
 import nexis from "../../assets/projects/nexis.PNG";
-import { Link } from "react-scroll";
-import Explanation from "../page/Explanation";
+
 
 const Portfolio = () => {
     const portfolios = [
