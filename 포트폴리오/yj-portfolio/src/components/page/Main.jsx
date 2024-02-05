@@ -8,7 +8,7 @@ import SocialLinks from "../modules/SocialLinks";
 
 export function Main() {
     return (
-        <div>
+        <>
             <NavBar />
             <Home />
             <About />
@@ -16,6 +16,6 @@ export function Main() {
             <Experience />
             <Contact />
             <SocialLinks />
-        </div>
+        </>
     );
 }

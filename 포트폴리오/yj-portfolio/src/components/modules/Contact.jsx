@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Contact = () => {
+    useEffect(()=>{
+        document.querySelectorAll('input').forEach((ele)=>{
+            ele.innerText="";
+        })
+    });
     return (
         <div name="contact" className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white">
             <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">

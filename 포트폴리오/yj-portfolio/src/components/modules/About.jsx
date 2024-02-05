@@ -7,13 +7,12 @@ const About = () => {
                 <div className="pb-8">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">About</p>
                 </div>
-                {/* <p className="text-xl mt-20">안녕하세요, 신입 프론트엔드 개발자 신용진입니다.</p> */}
                 <b className="text-xl"><i>* </i>경력</b>
                 <p className="text-xl"><i>- </i> 2020.12 ~ 2023.07 RPA 개발자</p>
                 <br/>
                 <b className="text-xl"><i>* </i>교육</b>
-                <p className="text-xl"><i>- </i> 2020.04 ~ 2020.11 Java언어 기반의 스마트웹 Full-Stack 개발자 양성과정</p>
                 <p className="text-xl"><i>- </i> 2023.07 ~ 2024.01 프론트엔드(React,PHP), 플러터 활용 웹&앱 개발 양성과정</p>
+                <p className="text-xl"><i>- </i> 2020.04 ~ 2020.11 Java언어 기반의 스마트웹 Full-Stack 개발자 양성과정</p>
             </div>
         </div>
     );
