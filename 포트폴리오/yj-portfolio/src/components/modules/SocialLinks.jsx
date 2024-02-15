@@ -13,6 +13,7 @@ export function SocialLinks(){
                 </>
             ),
             href: "https://github.com/novall9633",
+            style: "rounded-tr-md"
         },
         {
             id: 2,
@@ -52,3 +53,4 @@ export function SocialLinks(){
         </div>
     );
 };
+
