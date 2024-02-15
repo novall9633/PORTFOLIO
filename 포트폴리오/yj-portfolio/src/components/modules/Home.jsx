@@ -3,7 +3,7 @@ import MyImage from "../../assets/myImage.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
-const Home = () => {
+export function Home()  {
     return (
         <div name="home" className="h-[70vh] w-full bg-gradient-to-b from-black to-gray-800">
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-around h-full px-4 md:flex-row">
@@ -40,5 +40,3 @@ const Home = () => {
         </div>
     );
 };
-
-export default Home;

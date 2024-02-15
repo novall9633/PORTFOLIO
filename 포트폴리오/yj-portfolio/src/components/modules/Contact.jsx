@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const Contact = () => {
+export function Contact() {
     useEffect(()=>{
         document.querySelectorAll('input').forEach((ele)=>{
             ele.innerText="";
@@ -47,4 +47,3 @@ const Contact = () => {
     );
 };
 
-export default Contact;

@@ -11,7 +11,7 @@ export function Layout(){
     const chgPage = useCallback((pgName,param) => goNav(pgName,param),[]);
 
     return(
-        <pCon.Provider value={chgPage}>
+        <pCon.Provider value={{chgPage}}>
             <MainArea />
         </pCon.Provider>
     )

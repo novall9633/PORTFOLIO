@@ -7,7 +7,7 @@ import reactImg from "../../assets/reactImg.png";
 import github from "../../assets/github.png";
 
 
-const Experience = () => {
+export function Experience(){
 
     const techs = [
         {
@@ -65,4 +65,3 @@ const Experience = () => {
   )
 }
 
-export default Experience;

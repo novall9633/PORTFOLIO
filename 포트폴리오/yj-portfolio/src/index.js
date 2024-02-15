@@ -1,6 +1,6 @@
 import {createRoot} from 'react-dom/client';
 import { Layout } from "./components/layout/Layout";
-import Explanation from "./components/page/Explanation";
+import {Explanation} from "./components/page/Explanation";
 import { Main } from "./components/page/Main";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css'

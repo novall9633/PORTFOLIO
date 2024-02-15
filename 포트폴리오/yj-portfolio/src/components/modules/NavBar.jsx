@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { pCon } from "./pContext";
 
-const NavBar = () => {
+export function NavBar(){
+    const myCon = useContext(pCon);
     const [nav, setNav] = useState(false);
 
     const links = [
@@ -30,11 +32,11 @@ const NavBar = () => {
     return (
         <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
             <div>
-                <h1 className="text-5xl font-signature ml-2">YongJin</h1>
+                <h1 className="text-5xl font-signature ml-2 cursor-pointer" onClick={()=>myCon.chgPage("/",{})}>YongJin</h1>
             </div>
 
             <ul className="hidden md:flex">
-                {links.map(({ id, link }) => {
+                {links.map(({ id, link ,subLink }) => {
                     return(
                     <li
                         key={id}
@@ -65,5 +67,3 @@ const NavBar = () => {
         </div>
     );
 };
-
-export default NavBar;

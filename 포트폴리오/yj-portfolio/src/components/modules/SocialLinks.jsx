@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const SocialLinks = () => {
+export function SocialLinks(){
     const links = [
         {
             id: 1,
@@ -52,5 +52,3 @@ const SocialLinks = () => {
         </div>
     );
 };
-
-export default SocialLinks;
