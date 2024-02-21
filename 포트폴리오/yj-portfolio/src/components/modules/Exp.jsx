@@ -1,5 +1,7 @@
 import React from "react";
 import { expData } from "../../data/expData";
+import { Link } from "react-router-dom";
+import { SwiperPro } from "../plugin/SwiperPro";
 
 export function Exp({ cat }) {
     return (
@@ -19,7 +21,8 @@ export function Exp({ cat }) {
                 </div>
                 <div className="py-8 px-8">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">결과물</p>
-                    <p className="py-6">{expData[cat].result}</p>
+                    <SwiperPro cat={cat} />
+                    {/* <p className="py-6">{expData[cat].result}</p> */}
                 </div>
             </div>
         </div>

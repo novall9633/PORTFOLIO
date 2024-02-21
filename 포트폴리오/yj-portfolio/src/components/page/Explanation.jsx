@@ -6,7 +6,7 @@ import { SocialLinks } from "../modules/SocialLinks";
 export function Explanation(props) {
     return (
         <>
-            <NavBar />
+            <NavBar cat="exp" />
             <Exp cat={props.cat} />
             <SocialLinks />
         </>

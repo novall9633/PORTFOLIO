@@ -9,7 +9,7 @@ import {SocialLinks} from "../modules/SocialLinks";
 export function Main() {
     return (
         <>
-            <NavBar />
+            <NavBar cat="main"/>
             <Home />
             <About />
             <Portfolio />

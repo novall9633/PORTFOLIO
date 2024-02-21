@@ -5,7 +5,7 @@ import { Main } from "./components/page/Main";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css'
 
-function App() {
+export default function App() {
     return (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
