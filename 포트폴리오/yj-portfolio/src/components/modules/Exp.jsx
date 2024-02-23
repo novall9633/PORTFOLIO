@@ -17,7 +17,14 @@ export function Exp({ cat }) {
                 </div>
                 <div className="py-8 px-8">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">개발 과정</p>
-                    <p className="py-6">{expData[cat].develop}</p>
+                    {expData[cat].develop.map(({ sub, exp }) => {
+                        return (
+                            <>
+                                <p className="text-2xl font-bold py-4">{sub}</p>
+                                <p className="">{exp}</p>
+                            </>
+                        );
+                    })}
                 </div>
                 <div className="py-8 px-8">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">결과물</p>
