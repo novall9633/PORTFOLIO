@@ -1,7 +1,6 @@
 import React from "react";
 import { expData } from "../../data/expData";
-import { Link } from "react-router-dom";
-import { SwiperPro } from "../plugin/SwiperPro";
+
 
 export function Exp({ cat }) {
     return (
@@ -17,19 +16,35 @@ export function Exp({ cat }) {
                 </div>
                 <div className="py-8 px-8">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">개발 과정</p>
-                    {expData[cat].develop.map(({ sub, exp }) => {
+                        {expData[cat].develop.map(({ sub, exp },i) => {
+                            return (
+                                <>
+                                    <li className="text-2xl py-4" key={i}>{sub} - {exp}</li>
+                                </>
+                            );
+                        })}
+                </div>
+                <div className="py-8 px-8">
+                    <p className="text-2xl font-bold inline border-b-4 border-gray-500">결과물</p>
+                </div>
+                <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+                    {expData[cat].result.map((v, i) => {
                         return (
-                            <>
-                                <p className="text-2xl font-bold py-4">{sub}</p>
-                                <p className="">{exp}</p>
-                            </>
+                            <div key={i} className="hover:scale-105 duration-500 py-2 rounded-lg">
+                                <img src={process.env.PUBLIC_URL + "./images/" + cat + "/" + v + ".png"} alt="" />
+                            </div>
                         );
                     })}
                 </div>
                 <div className="py-8 px-8">
-                    <p className="text-4xl font-bold inline border-b-4 border-gray-500">결과물</p>
-                    <SwiperPro cat={cat} />
-                    {/* <p className="py-6">{expData[cat].result}</p> */}
+                    <button
+                        className="py-3 m-3 duration-200 hover:scale-105 text-4xl font-bold"
+                        onClick={() => {
+                            window.open(expData[cat].link, cat);
+                        }}
+                    >
+                        사이트 바로가기
+                    </button>
                 </div>
             </div>
         </div>

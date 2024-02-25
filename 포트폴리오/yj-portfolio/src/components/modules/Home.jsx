@@ -1,5 +1,4 @@
 import React from "react";
-import MyImage from "../../assets/myImage.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -9,7 +8,7 @@ export function Home()  {
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-around h-full px-4 md:flex-row">
                 
                 <div>
-                    <img src={MyImage} alt="my profile" className="md:rounded-[50%] md:pt-8 pt-32 pb-4 max-w-[170%] w-[170%]" />
+                    <img src={process.env.PUBLIC_URL+"./images/myImage.jpg"} alt="my profile" className="md:rounded-[50%] md:pt-8 pt-32 pb-4 max-w-[170%] w-[170%]" />
                 </div>
                 <div className="flex flex-col justify-center md:h-full">
                     <h2 className="text-3xl sm:text-7xl font-bold text-white">

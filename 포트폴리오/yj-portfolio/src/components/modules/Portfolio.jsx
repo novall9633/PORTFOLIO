@@ -1,6 +1,4 @@
 import React, { useContext } from "react";
-import bowling from "../../assets/projects/bowling.PNG";
-import nexis from "../../assets/projects/nexis.PNG";
 import { pCon } from "./pContext";
 
 export function Portfolio(){
@@ -8,7 +6,7 @@ export function Portfolio(){
     const portfolios = [
         {
             id: 1,
-            isrc: bowling,
+            isrc: process.env.PUBLIC_URL+"./images/projects/bowling.PNG",
             src: "bowling",
             link: "/bowling",
             demoLink:
@@ -18,7 +16,7 @@ export function Portfolio(){
         },
         {
             id: 2,
-            isrc: nexis,
+            isrc: process.env.PUBLIC_URL+"./images/projects/nexis.PNG",
             src: "nexis",
             link: "/nexis",
             demoLink: "https://novall9633.github.io/syj-react-pj/",

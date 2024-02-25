@@ -1,42 +1,35 @@
 import React from 'react';
 
-import html from "../../assets/html.png";
-import css from "../../assets/css.png";
-import javascript from "../../assets/javascript.png";
-import reactImg from "../../assets/reactImg.png";
-import github from "../../assets/github.png";
-
-
 export function Experience(){
 
     const techs = [
         {
             id:1,
-            src: html,
+            src: process.env.PUBLIC_URL+"./images/html.png",
             title: "HTML",
             style : 'shadow-orange-500'
         },
         {
             id:2,
-            src: css,
+            src: process.env.PUBLIC_URL+"./images/css.png",
             title: "CSS",
             style : 'shadow-blue-500'
         },
         {
             id:3,
-            src: javascript,
+            src: process.env.PUBLIC_URL+"./images/javascript.png",
             title: "JavaScript",
             style : 'shadow-yellow-500'
         },
         {
             id:4,
-            src: reactImg,
+            src: process.env.PUBLIC_URL+"./images/reactImg.png",
             title: "React",
             style : 'shadow-blue-600'
         },
         {
             id:5,
-            src: github,
+            src: process.env.PUBLIC_URL+"./images/github.png",
             title: "GitHub",
             style : 'shadow-gray-400'
         },
