@@ -6,7 +6,7 @@ export function Portfolio(){
     const portfolios = [
         {
             id: 1,
-            isrc: process.env.PUBLIC_URL+"./images/projects/bowling.PNG",
+            isrc: process.env.PUBLIC_URL+"/images/projects/bowling.PNG",
             src: "bowling",
             link: "/bowling",
             demoLink:
@@ -16,7 +16,7 @@ export function Portfolio(){
         },
         {
             id: 2,
-            isrc: process.env.PUBLIC_URL+"./images/projects/nexis.PNG",
+            isrc: process.env.PUBLIC_URL+"/images/projects/nexis.PNG",
             src: "nexis",
             link: "/nexis",
             demoLink: "https://novall9633.github.io/syj-react-pj/",
@@ -27,13 +27,13 @@ export function Portfolio(){
     
 
     return (
-        <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen">
+        <div name="portfolio" className="bg-gradient-to-b from-black to-gray-800 w-full text-white py-20">
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>
                     <p className="py-6">Check out some of my work right here</p>
                 </div>
-                <div className="grid sm:grid-flow-col-2 md:grid-cols-3 gap-8 px-12 sm:px-8">
+                <div className="grid sm:grid-flow-col-2 md:grid-cols-2 gap-8 px-12 sm:px-8">
                     {portfolios.map(({ id, isrc, src, link, demoLink, codeLink }) => {
                         return (
                             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
@@ -57,7 +57,7 @@ export function Portfolio(){
                                     </button>
                                     <button className="w-1/3 px-3 py-3 m-3 duration-200 hover:scale-105"
                                     onClick={()=>myCon.chgPage(link,{})}>
-                                        Explanation
+                                        Exp
                                     </button>
                                 </div>
                             </div>

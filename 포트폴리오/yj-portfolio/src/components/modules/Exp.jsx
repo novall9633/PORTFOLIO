@@ -28,13 +28,13 @@ export function Exp({ cat }) {
                     </ul>
                 </div>
                 <div className="py-8 px-8">
-                    <p className="text-2xl font-bold inline border-b-4 border-gray-500">결과물</p>
+                    <p className="text-4xl font-bold inline border-b-4 border-gray-500">결과물</p>
                 </div>
                 <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
                     {expData[cat].result.map((v, i) => {
                         return (
                             <div key={i} className="hover:scale-105 duration-500 py-2 rounded-lg">
-                                <img src={process.env.PUBLIC_URL + "./images/" + cat + "/" + v + ".png"} alt="" />
+                                <img src={process.env.PUBLIC_URL + "/images/" + cat + "/" + v + ".png"} alt="" />
                             </div>
                         );
                     })}

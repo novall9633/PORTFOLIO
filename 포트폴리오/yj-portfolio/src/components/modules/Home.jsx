@@ -4,14 +4,14 @@ import { Link } from "react-scroll";
 
 export function Home()  {
     return (
-        <div name="home" className="h-[70vh] w-full bg-gradient-to-b from-black to-gray-800">
+        <div name="home" className="min-h-fit w-full bg-gradient-to-b from-black to-gray-800 pt-20 pb-4">
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-around h-full px-4 md:flex-row">
                 
                 <div>
-                    <img src={process.env.PUBLIC_URL+"./images/myImage.jpg"} alt="my profile" className="md:rounded-[50%] md:pt-8 pt-32 pb-4 max-w-[170%] w-[170%]" />
+                    <img src={process.env.PUBLIC_URL+"/images/myImage.jpg"} alt="my profile" className="md:rounded-[50%] md:pt-8 pt-20 pb-4 w-[170px] max-w-[170px] md:max-w-[170%] md:w-[170%]" />
                 </div>
                 <div className="flex flex-col justify-center md:h-full">
-                    <h2 className="text-3xl sm:text-7xl font-bold text-white">
+                    <h2 className="text-3xl sm:text-7xl font-bold text-white">  
                         신용진 Portfolio
                     </h2>
                     <p className="text-gray-500 py-4 max-w-md">
