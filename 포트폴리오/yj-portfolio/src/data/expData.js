@@ -15,4 +15,12 @@ export const expData = {
         result: ["1","2","3","4","5"],
         link:"https://novall9633.github.io/syj-react-pj/",
     },
+    jotion: {
+        subject: "Notion Clone Coding",
+        pj:"개인",
+        intro: "Next.js, TypeScript를 학습하고자 유튜브 강의를 참고하여 프로젝트를 진행했습니다. 유튜브 강의를 통해 Next.js와 TypeScript를 학습하고 프로젝트를 진행함으로써, API 통신, 타입 시스템, 여러 기술 스택들을 사용하여 안정적인 코드 작성 등의 경험을 쌓을 수 있었습니다.",
+        stack: ["React", "Next.js", "TypeScript", "Tailwind", "Convex", "Clerk", "Edgestore"],
+        result: ["1","2","3","4","5"],
+        link:"https://note-k7ftbhw8p-novall9633s-projects.vercel.app/",
+    },
 };

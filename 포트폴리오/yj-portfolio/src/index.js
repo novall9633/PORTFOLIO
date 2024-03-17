@@ -13,6 +13,7 @@ export default function App() {
                     <Route index element={<Main />} />
                     <Route path="bowling" element={<Explanation cat="bowling" />} />
                     <Route path="nexis" element={<Explanation cat="nexis" />} />
+                    <Route path="jotion" element={<Explanation cat="jotion" />} />
                 </Route>
             </Routes>
         </BrowserRouter>

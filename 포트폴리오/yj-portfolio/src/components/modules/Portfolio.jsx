@@ -22,6 +22,14 @@ export function Portfolio(){
             demoLink: "https://novall9633.github.io/syj-react-pj/",
             codeLink: "https://github.com/novall9633/syj-react-pj",
         },
+        {
+            id: 3,
+            isrc: process.env.PUBLIC_URL+"/images/projects/jotion.png",
+            src: "jotion",
+            link: "/jotion",
+            demoLink: "https://note-k7ftbhw8p-novall9633s-projects.vercel.app/",
+            codeLink: "https://github.com/novall9633/note",
+        },
     ];
 
     
